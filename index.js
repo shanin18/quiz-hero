@@ -9,7 +9,9 @@ let startQuiz = document.querySelector("#startQuiz");
 let rulesContainer = document.querySelector("#rulesContainer");
 let alertContainer = document.querySelector("#alertContainer");
 let submitContainer = document.querySelector("#submitContainer");
-let quizContainer = document.querySelector("#quizContainer");
+let quizContainer = document.querySelector(".quizContainer");
+// console.log(quizContainer)
+
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
 
@@ -57,7 +59,6 @@ const displayQuiz = (data) => {
     quizContainer.innerHTML = "";
     return;
   }
-  console.log(data)
 
   data.forEach((quiz, i) => {
     quizContainer.innerHTML += `<div class="m-3 py-3 px-4 shadow-sm rounded">
