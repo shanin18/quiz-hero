@@ -9,8 +9,7 @@ let startQuiz = document.querySelector("#startQuiz");
 let rulesContainer = document.querySelector("#rulesContainer");
 let alertContainer = document.querySelector("#alertContainer");
 let submitContainer = document.querySelector("#submitContainer");
-let quizContainer = document.querySelector(".quizContainer");
-// console.log(quizContainer)
+let quizContainer = document.querySelector("#quizContainer");
 
 let answersContainer = document.querySelector("#answersContainer");
 let displayResult = document.querySelector("#displayResult");
@@ -110,7 +109,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
 
   // data setting on local storage and getting data from local storage
-  let storage = JSON.parse(localStorage.getItem("result"));
+  let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
     localStorage.setItem(
       "results",
